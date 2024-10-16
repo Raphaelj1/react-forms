@@ -25,7 +25,7 @@ class HttpService {
 		return apiClient.delete(`${this.endpoint}/${id}`);
 	}
 
-	updateUser<T extends Entity>(entity: T) {
+	update<T extends Entity>(entity: T) {
 		return apiClient.patch(`${this.endpoint}/`, entity);
 	}
 }
